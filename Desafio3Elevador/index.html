@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elevador Simples</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Simulador de Elevador</h1>
+
+  <div id="simulacao">
+    <div id="passageiro-area">
+      <img src="Passanger.jpeg" alt="Passageiro" id="passageiro">
+      <button id="entrar" class="escondido">Entrar</button>
+    </div>
+
+    <div id="predio">
+      <div class="andares">
+        <div class="andar" data-andar="1"></div>
+        <div class="andar" data-andar="2"></div>
+        <div class="andar" data-andar="3"></div>
+        <div class="andar" data-andar="4"></div>
+      </div>
+
+      <div class="elevador"></div>
+
+      <div class="chamadas">
+        <div class="andar-chamada" data-andar="4">
+          <button class="chamada" data-direcao="baixo">⬇️</button>
+        </div>
+        <div class="andar-chamada" data-andar="3">
+          <button class="chamada" data-direcao="cima">⬆️</button>
+          <button class="chamada" data-direcao="baixo">⬇️</button>
+        </div>
+        <div class="andar-chamada" data-andar="2">
+          <button class="chamada" data-direcao="cima">⬆️</button>
+          <button class="chamada" data-direcao="baixo">⬇️</button>
+        </div>
+        <div class="andar-chamada" data-andar="1">
+          <button class="chamada" data-direcao="cima">⬆️</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="painel" class="escondido">
+    <h3>Painel do Elevador</h3>
+    <button class="painel-btn" data-andar="1">1</button>
+    <button class="painel-btn" data-andar="2">2</button>
+    <button class="painel-btn" data-andar="3">3</button>
+    <button class="painel-btn" data-andar="4">4</button>
+  </div>
+
+  <audio id="somAndar" src="ding.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

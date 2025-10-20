@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Números Romanos ↔ Decimal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Conversor de Números Romanos == Decimal</h1>
+
+  <div class="main">
+    <aside class="tabela-romanos">
+      <h3>Tabela de Referência</h3>
+      <ul>
+        <li>I = 1</li>
+        <li>V = 5</li>
+        <li>X = 10</li>
+        <li>L = 50</li>
+        <li>C = 100</li>
+        <li>D = 500</li>
+        <li>M = 1000</li>
+      </ul>
+    </aside>
+
+    <div class="container">
+      <label for="inputRomano">Valor Romano:</label>
+      <input type="text" id="inputRomano" placeholder="Ex: X">
+      <small id="erroRomano" class="erro"></small>
+
+      <label for="inputDecimal">Valor Decimal:</label>
+      <input type="number" id="inputDecimal" placeholder="Ex: 10" min="1">
+      <small id="erroDecimal" class="erro"></small>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

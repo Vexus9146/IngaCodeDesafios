@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Painel lateral */
+.tabela-romanos {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+}
+
+.tabela-romanos h3 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.tabela-romanos ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabela-romanos li {
+  padding: 5px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+label, input, small {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input.erro {
+  border-color: red;
+}
+
+small.erro {
+  color: red;
+  min-height: 18px;
+}
